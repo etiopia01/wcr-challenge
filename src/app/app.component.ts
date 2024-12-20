@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<app-welcome></app-welcome>`,
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [WelcomeComponent]
 })
-export class AppComponent {
-  title = 'wcr-challenge';
-}
+export class AppComponent {}

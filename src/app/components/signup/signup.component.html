@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card-title>Sign Up</mat-card-title>
+    
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Full Name</mat-label>
@@ -23,6 +23,13 @@
       </mat-form-field>
   
       <button mat-raised-button color="primary" type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+      
+      <div class="social-buttons">
+        <app-google-button></app-google-button>
+        <app-fb-button></app-fb-button>
+      </div>
+  
+      
     </form>
   </mat-card>
   
