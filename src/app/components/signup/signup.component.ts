@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MaterialModule } from '../../../shared/material.module';
+import { MaterialModule } from '../../shared/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
